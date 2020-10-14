@@ -1,42 +1,21 @@
 import  React from 'react';
 import './styles/styles.scss';
-import Curso from './curso.jsx';
+import Banner from './Banner'
+import Grilla from './CursosGrid'
+
+import Form from './form'//importando este componente formulario que sera de tipo clase
 //esta es una funcion flecha que me va a retornar algo
+//lo que le pongo a los componentes se llaman propiedades y no se llaman atributos sino propiedades
+//Desde ahora en adealante debes encerrar tus componentes con route y cada uno de tus componentes lo pone dentro de route
+//el switch es para que se pueda usar el Default de mejor manera 
+
+//aca estoy destrurando todo el arreglo de objetos y esta es la posicion 1
+
 
 const App = ()=> (//bueno no me dejaron crear el codigo pero lo que iba a escribir era basicamente que no necesito poner los divs ya que dentro el componente curso ya exite ese componente de react
+//El router es el emcargado de administrar todas las rutas dentro de mi aplicacion
 
-    <>
-<div className="l-section s-py-4">
 
-  <div className="ed-grid lg-grid-2 row-gap s-gap-2 m-gap-4">
- 
-    <div className="s-column s-main-center lg-main-start lg-cross-start s-center lg-left">
-      <h1>Banner principal de dos columnas con EDgrid</h1>
-      <p>Agradecido con el de arriba, pero muy con el de arriba</p>
- 
-      <div className="s-main-center">
-        <a href="https://google.com" className="button s-mr-2 s-mb-2 m-mb-0">Botón 1</a>
-        <a href="https://google.com" className="button s-mb-2 m-mb-0">Botón 2</a>
-      </div>
-    </div>
-   
-    <div>
-      <div className="img-container s-ratio-16-9">
-        <img alt="Imagen de edTeam" className="s-radius-1" src="https://ed-grid.com/assets/img/og-image.jpg" />
-      </div>
-    </div>
-  </div>
-</div>
-
-<div className="ed-grid s-grid-3">
-  <Curso />
-  <Curso />
-  <Curso />
-  <Curso />
-  <Curso />
-  <Curso />
-</div>
-</>
 
 );
 export default App;//esto es para exportar el componente que acabo de crear
