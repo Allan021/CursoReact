@@ -2,7 +2,7 @@
 import React,{Component} from 'react'
 
 
-class Formulario extends Component{//aca le digo la clase debe heredar sus metodos de Component que incluye tanto el setState como el State
+class Form extends Component{//aca le digo la clase debe heredar sus metodos de Component que incluye tanto el setState como el State
 
 //Inicializar el constructor para preparar la estructura del componente y la logica que necesitare antes de renderizarlo
 constructor(props){
@@ -45,10 +45,11 @@ actualizarCorreo(campo){
 render(){//este metodo render sera el encargado de renderizar mi componente en el  navegador y el return me retornara el contenido del componente
 
 return(
+    <div className="l-section s-py-4">
     <div className="ed-grid">
 <h1>Formulario de {this.props.nombre}</h1>
 <h4>Fecha acutal: {Math.ceil(this.state.fecha/1000)}</h4>
-    <form id="formulario">
+    <form id="formulario" className='ed-grid lg-grid-2'>
         <div className="form__item m-grid-2">
          <label htmlFor="nombre">Nombre completo:</label>
             <input type="text"onChange={this.actualizarNombre}/>
@@ -66,6 +67,7 @@ return(
           <span>{`Tu correo es: ${this.state.correo} `/*Aca basicamnete estiy imprimirendo todos la informacion del estado actua;*/}</span>
 </div>
 
+</div>
 </div>
 //Yo no puedo establecer el estado directamente desde el estado sino que necesito actualizarlo con el et state
 
@@ -99,4 +101,4 @@ clearInterval(this.intervalo);
 }
 
 
-export default Formulario;
+export default Form;

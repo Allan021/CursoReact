@@ -1,4 +1,5 @@
 import React from 'react'//todos estos son clases que tienen sus atricbutos y metodods
+import BannerEDteam from '../Atoms/BannerEDTEAM'
 
 //Este banner es un componente presentacional o tonto ya que es de tipo funcion y no recibe props por lo que no es dinamico y lo que recibe props automaticamente es un componente deinamico y esas props se declaran en las propiedades de los componentes
 const Banner = ()=> (
@@ -18,7 +19,7 @@ const Banner = ()=> (
  
   <div>
     <div className="img-container s-ratio-16-9">
-      <img alt="Imagen de edTeam" className="s-radius-1" src="https://ed-grid.com/assets/img/og-image.jpg" />
+      <BannerEDteam alt="Imagen de Edteam" Urlimage="https://ed-grid.com/assets/img/og-image.jpg" />
     </div>
   </div>
 </div>
